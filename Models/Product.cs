@@ -7,6 +7,9 @@
         public String? ImageUrl { get; set; }
         public decimal Price { get; set; }
         public float QuantityInStock { get; set; }
-        public DateTime CreateAt { get; set; }
+        public DateTime CreateAt { get; set; } = DateTime.Now;
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; } = new();
     }
 }
